@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valestra Gecomerce</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #agenda {
+        width: 70%;
+        height: 100%;
+    }
+
+
+    #pipe {
+        width: 30%;
+        height: 100%;
+    }
+
+    @media (max-width: 768px) or (orientation: portrait) {
+
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        #agenda {
+            width: 100%;
+            height: 100%;
+        }
+
+        #pipe {
+            margin-top: 10%;
+            width: 100%;
+            height: 80%;
+        }
+
+    }
+</style>
+
+<body>
+
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <iframe id="agenda"
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2P8PIilIG1dofi9T7mrg97qcQwjxQRjKxfoGJIoA8ghHppX20QEj7u-wBZuqcX3q4u7NYS4FBI?gv=true"></iframe>
+    <!-- end Google Calendar Appointment Scheduling -->
+
+
+
+    <iframe id="pipe" src='https://app.pipefy.com/public/form/sBKujdaP?embedded=true' frameborder='0'></iframe>
+
+</body>
+
+</html>
